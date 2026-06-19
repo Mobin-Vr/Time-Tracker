@@ -2,6 +2,8 @@
    "name": "time-tracker",
    "private": true,
    "version": "1.1.0",
+   "description": "Time Tracker Electron App - Track your work and break sessions",
+   "author": "Mobin-Vr",
    "type": "module",
    "main": "./out/main/index.js",
    "scripts": {
