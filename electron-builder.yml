@@ -1,0 +1,29 @@
+appId: com.timetracker.app
+productName: Time Tracker
+copyright: Copyright © 2024
+
+directories:
+   output: dist
+   buildResources: build
+
+files:
+   - out/**/*
+   - public/**/*
+   - package.json
+
+win:
+   target:
+      - target: nsis
+        arch:
+           - x64
+   icon: public/clock-favicon.png
+
+nsis:
+   oneClick: false
+   allowToChangeInstallationDirectory: true
+   createDesktopShortcut: true
+   createStartMenuShortcut: true
+   shortcutName: Time Tracker
+
+extraMetadata:
+   main: out/main/index.js
